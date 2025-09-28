@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>The Coffee Store</title>
+        <style>
+            header {
+                background-color: beige;
+                padding: 10px;
+                text-align: center;
+                color: brown
+            }
+             header a {
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">The Coffee Store</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="coffee.html">Coffee Info</a>
+            </nav>
+        </header>
+        
+        <div align = "center">
+            <label for="name">Your Name:</label> <input type="text" id="name" name="name">
+            <p><em>Fill out each form in full before submitting.</em></p>
+        
+            <div id="mainDiv">What coffee would you like? Please select the choices.</div>
+            <br />
+        </div>
+        <form action="thankyou.html" method="get" align = center>
+            
+            <input type="checkbox" id="mocha" name="coffee" value="mocha">
+                <label for="mocha">Mocha - $4.00</label><br>
+        
+            <input type="checkbox" id="espresso" name="coffee" value="espresso">
+                <label for="espresso">Espresso - $3.00</label><br>
+                    
+            <input type="checkbox" id="vanilla" name="coffee" value="vanilla">
+                <label for="vanilla">Vanilla - $4.30</label><br>        
+        
+            <input type="checkbox" id="black" name="coffee" value="black">
+                <label for="black">Black - $2.50</label><br>
+        
+            <p>Payment Type:</p>
+            <input type="radio" id="visa" name="payment" value="visa">
+                <label for="visa">Visa</label><br>        
+        
+            <input type="radio" id="mastercard" name="payment" value="mastercard">
+                <label for="mastercard">Mastercard</label><br>         
+        
+            <input type="radio" id="paypal" name="payment" value="paypal">
+                <label for="paypal">PayPal</label><br>
+        
+        
+            <button typw="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+        <div align = center>
+            <img src = "../images/cup.png" width = 500>
+        </div>
+    </body>
+    
+</html>
