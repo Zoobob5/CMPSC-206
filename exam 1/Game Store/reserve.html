@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Reservation</title>
+        <style>
+            table, th, td {
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+            }
+            th {
+                background-color: beige;
+                color: brown;
+            }
+            header {
+                background-color: antiquewhite;
+                padding: 10px;
+                text-align: center;
+                color: brown
+            }
+            header a {
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+                color: brown
+            }
+            h2 {
+                text-align: center;
+                color: brown;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="title">Reserving</h1>
+            <nav>
+                <a href="about.html">Welcome!!</a>
+                <a href="lounge.html">Game Room</a>
+                <a href="store.html">Game/Products</a>
+            </nav>
+        </header>
+        
+
+        
+        <form action="reserved.html" method="get" align = center>
+            <p>Select your room size:</p>
+            <input type="checkbox" id="small" name="small" value="small">
+                <label for="small">Small Room - $20.00</label><br>
+        
+            <input type="checkbox" id="medium" name="medium" value="medium">
+                <label for="medium">Medium Room - $30.00</label><br>
+                    
+            <input type="checkbox" id="large" name="large" value="large">
+                <label for="large">Large Room - $45.00</label><br>        
+        
+            <input type="checkbox" id="extra" name="extra" value="extra">
+                <label for="extra">Extra Large Room - $50.00</label><br>
+            
+            <p>Select Time:</p>
+            <input type="checkbox" id="hour" name="hour" value="hour">
+                <label for="hour">1HR - $20.00</label><br>
+        
+            <input type="checkbox" id="2hour" name="2hour" value="2hour">
+                <label for="2hour">2 HR - $40.00</label><br>
+                    
+            <input type="checkbox" id="3hour" name="3hour" value="3hour">
+                <label for="3hour">3 HR - $60.00</label><br>        
+        
+            <input type="checkbox" id="unlimited" name="unlimited" value="unlimited">
+                <label for="unlimited">No Limit - $150.00</label><br>
+        
+            <p>Payment Type:</p>
+            <input type="radio" id="visa" name="payment" value="visa">
+                <label for="visa">Visa</label><br>        
+        
+            <input type="radio" id="mastercard" name="payment" value="mastercard">
+                <label for="mastercard">Mastercard</label><br>         
+        
+            <input type="radio" id="paypal" name="payment" value="paypal">
+                <label for="paypal">PayPal</label><br>
+        
+        
+            <button typw="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </body>
+</html>
