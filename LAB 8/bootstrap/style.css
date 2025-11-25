@@ -1,0 +1,71 @@
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn-primary, .btn-success, .btn-secondary {
+  border-radius: 25px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, 
+.btn-success:hover, 
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+/* Headings */
+h1, h2 {
+  font-weight: 600;
+  color: #222;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background-color: #007bff;
+  font-weight: 500;
+}
+
+/* Images */
+img.rounded {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form */
+form {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form .form-control {
+  border-radius: 8px;
+  border-color: #ced4da;
+}
+
+/* Container spacing */
+.container {
+  margin-bottom: 60px;
+}
+

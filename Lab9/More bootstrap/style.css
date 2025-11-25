@@ -1,0 +1,157 @@
+body {
+    background-color: #1a1a1a;
+    color: #e2e2e2;
+    font-family: "Segoe UI", sans-serif;
+    padding-top: 100px;
+}
+
+/* Header Title */
+.site-title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Content boxes */
+.content-box {
+    background: #222;
+    border-radius: 10px;
+    border: 1px solid #2e2e2e;
+    transition: 0.2s ease;
+}
+
+.content-box:hover {
+    border-color: #4b6cff;
+    box-shadow: 0 0 10px rgba(75, 108, 255, 0.4);
+}
+
+/* Cards */
+.game-card {
+    background: #222;
+    border: 1px solid #333;
+    transition: 0.3s ease;
+    color: aqua;
+   
+}
+
+.game-card img {
+
+    width: 100%;
+}
+.game-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 110, 255, 0.4);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #4b6cff;
+    border-color: #4b6cff;
+}
+
+.btn-primary:hover {
+    background-color: #3f5ce0;
+}
+
+.btn-outline-primary {
+    border-color: #4b6cff;
+    color: #4b6cff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #4b6cff;
+    color: #fff;
+}
+
+/* Nav links */
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Page spacing */
+h2, h3 {
+    color: #f2f2f2;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    height: 100vh;             
+    width: 100%;
+    background-color: #f9f9f9; 
+}
+
+.centered-text {
+    text-align: center;
+    font-size: 2.5em;
+    color: aqua
+}
+
+
+/* Hide the actual checkboxes */
+.side-quests input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the label as a button */
+.quest-label {
+    display: block;
+    cursor: pointer;
+    padding: 8px 12px;
+    border: 1px solid #4b6cff;
+    border-radius: 5px;
+    color: #4b6cff;
+    background-color: #111;
+    margin-bottom: 4px;
+    transition: all 0.3s ease;
+}
+
+.quest-label:hover {
+    color: #00ffe5;
+    box-shadow: 0 0 10px #00ffe5, 0 0 20px #4b6cff;
+}
+
+/* Check mark change when checked */
+.side-quests input[type="checkbox"]:checked + .quest-label::before {
+    content: '✔';
+    color: #00ffe5; 
+    margin-right: 6px;
+}
+
+/* Hidden content by default */
+.quest-content {
+    max-height: 0;
+    overflow: hidden;
+    padding-left: 12px;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    color: #e2e2e2;
+    font-size: 0.9rem;
+}
+
+/* Show content when checkbox is checked */
+.side-quests input[type="checkbox"]:checked + .quest-label + .quest-content {
+    max-height: 200px; 
+    padding: 8px 12px;
+    border-left: 2px solid #4b6cff;
+    margin-bottom: 4px;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+
+
+
+
+
+
+
+
